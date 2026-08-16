@@ -17,7 +17,7 @@ class BuildDQNModel(nn.Module):
         super().__init__()
 
         # Define network layers
-        self.input_layer = nn.Linear(state_size, 8) # NN has one hidden layer; 4 neurons seems to be the ideal parameter. Greater than this prevents
+        self.input_layer = nn.Linear(state_size, 8) # NN has one hidden layer; 8 neurons seems to be the ideal parameter. Greater than this prevents
                                                                 # the agent from learning consistently.
         self.output_layer = nn.Linear(8, action_size)
 
